@@ -71,8 +71,8 @@ graph TD
         G <--> J;
         J -->|Top-K 英文切片| K(Prompt 组装);
         H --> K;
-        K --> L[LLM 生成器 (DeepSeek)]:::llm;
-        L -->|中文回答 + [doc id]| M[前端优雅展示];
+        K --> L["LLM 生成器 (DeepSeek)"]:::llm;
+        L -->|"带引用的中文回答"| M[前端优雅展示];
         G -->|原文参考| M;
     end
 ```
